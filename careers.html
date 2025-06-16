@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Careers | Delali Energy Innovations</title>
+  <link rel="stylesheet" href="careers.css" />
+  <script defer src="careers.js"></script>
+  <!-- Include your font and favicon as needed -->
+  
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="logo.png" alt="Delali Energy Innovations Logo" />
+      </a>
+    </div>
+    <nav>
+      <a href="DEITS.html">Home</a>
+      <a href="about.html" >About Us</a>
+      <a href="careers.html" class = "active">Careers</a>
+      <a href="divisions.html" >Divisions</a>
+        <a href="why_us.html">Why Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <h1>Join Our Team</h1>
+    <p class="intro">We’re hiring bold thinkers to help shape the future of energy, AI, and finance. Apply below or send your CV to <a href="mailto:careers@delalienergy.com">careers@delalienergy.com</a>.</p>
+  </header>
+
+  <section class="open-positions">
+    <h2>Open Positions</h2>
+
+    <article class="job" tabindex="0">
+      <header class="job-header">
+        <h3>AI Systems Engineer <span class="location">– Remote</span></h3>
+        <button aria-expanded="false" aria-controls="desc1" class="expand-btn" aria-label="Expand job description">+</button>
+      </header>
+      <div id="desc1" class="job-desc" hidden>
+        <p>Design and develop AI-driven solutions that advance our energy and finance platforms. Requires experience in machine learning, neural networks, and software engineering.</p>
+        <ul>
+          <li>Experience with Python, TensorFlow/PyTorch</li>
+          <li>Strong problem-solving skills</li>
+          <li>Ability to work independently in a remote setting</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job" tabindex="0">
+      <header class="job-header">
+        <h3>Energy Platform Developer <span class="location">– Ghana/U.S., Hybrid</span></h3>
+        <button aria-expanded="false" aria-controls="desc2" class="expand-btn" aria-label="Expand job description">+</button>
+      </header>
+      <div id="desc2" class="job-desc" hidden>
+        <p>Develop and maintain scalable energy platform software integrating smart grid and IoT technologies. Collaboration across teams in Ghana and the U.S.</p>
+        <ul>
+          <li>Proficient in Java, Node.js, or C#</li>
+          <li>Experience with cloud infrastructure (AWS/Azure)</li>
+          <li>Strong communication and teamwork skills</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job" tabindex="0">
+      <header class="job-header">
+        <h3>Financial Security Analyst <span class="location">– Remote</span></h3>
+        <button aria-expanded="false" aria-controls="desc3" class="expand-btn" aria-label="Expand job description">+</button>
+      </header>
+      <div id="desc3" class="job-desc" hidden>
+        <p>Analyze and improve the security posture of our financial infrastructure platforms. Requires expertise in cybersecurity, risk management, and compliance.</p>
+        <ul>
+          <li>Familiarity with security frameworks and regulations</li>
+          <li>Experience in vulnerability assessments and penetration testing</li>
+          <li>Ability to communicate risks effectively to stakeholders</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <section class="application-form-section">
+    <h2>Application Form</h2>
+    <form id="applicationForm" novalidate>
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="position">Position Applying For:</label>
+      <select id="position" name="position" required>
+        <option value="" disabled selected>Select...</option>
+        <option value="AI Systems Engineer">AI Systems Engineer</option>
+        <option value="Energy Platform Developer">Energy Platform Developer</option>
+        <option value="Financial Security Analyst">Financial Security Analyst</option>
+      </select>
+
+      <label for="cvUpload">Upload Your CV (PDF):</label>
+      <input type="file" id="cvUpload" name="cvUpload" accept="application/pdf" required />
+
+      <button type="submit" class="submit-btn">Submit Application</button>
+    </form>
+    <div id="formMessage" role="alert" aria-live="polite"></div>
+  </section>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq1">Can I apply for multiple positions?</button>
+      <div id="faq1" class="faq-answer" hidden>
+        <p>Yes, you may apply for multiple positions. Please submit separate applications for each role.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq2">What’s the interview process like?</button>
+      <div id="faq2" class="faq-answer" hidden>
+        <p>Our interview process typically includes a phone screen, technical interview, and a final cultural fit discussion.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq3">Are internships available?</button>
+      <div id="faq3" class="faq-answer" hidden>
+        <p>We occasionally offer internships. Please check our careers page regularly or contact us for updates.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Delali Energy Innovations Technology Solutions LLC. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

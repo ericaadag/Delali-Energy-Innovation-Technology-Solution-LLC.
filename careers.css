@@ -1,0 +1,263 @@
+/* General resets and fonts */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #059ce2;
+  color: gold;
+  margin: 0;
+  padding: 0 20px 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: gold;
+  text-decoration: underline;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+/* Header and Logo */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logo-container img {
+  width: 180px;
+  max-width: 80vw;
+  margin: 0 auto 15px;
+  display: block;
+}
+
+/* Intro paragraph */
+.intro {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  font-weight: 500;
+}
+
+/* Open Positions Section */
+.open-positions h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.job {
+  background-color: #059ce2;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+  cursor: pointer;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+.job:focus-within,
+.job:hover {
+  box-shadow: 0 6px 12px rgba(255,215,0,0.7);
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.job-header h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.location {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1rem;
+  color: #ffda44;
+}
+
+.expand-btn {
+  background: gold;
+  border: none;
+  color: #01295F;
+  font-weight: 700;
+  font-size: 1.6rem;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.expand-btn:hover,
+.expand-btn:focus {
+  background: #ffda44cc;
+  outline: none;
+}
+
+.job-desc {
+  margin-top: 15px;
+  font-weight: 500;
+  color: #f7f1e3;
+}
+.job-desc ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+/* Application Form Section */
+.application-form-section {
+  background-color: #059ce2;
+  border-radius: 10px;
+  padding: 30px 25px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+  margin-top: 50px;
+}
+
+.application-form-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+input[type="file"] {
+  padding: 5px;
+  background: #011f4b;
+  color: gold;
+}
+
+input[type="file"]::file-selector-button {
+  background: gold;
+  color: #059ce2;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.submit-btn {
+  background: gold;
+  border: none;
+  color: #059ce2;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 12px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  background: #ffda44cc;
+  outline: none;
+}
+
+/* Form Message */
+#formMessage {
+  margin-top: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #f7f1e3;
+}
+
+/* FAQ Section */
+.faq-section {
+  margin-top: 60px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+.faq-item {
+  background-color: #023E8A;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  color: gold;
+  font-weight: 700;
+  font-size: 1.1rem;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+}
+
+.faq-question:hover,
+.faq-question:focus {
+  text-decoration: underline;
+}
+
+.faq-answer {
+  margin-top: 12px;
+  font-weight: 500;
+  color: #f7f1e3;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #2d2d86;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #2d2d86;
+  text-decoration: none;
+  font-weight: 600;
+  color: #ffda79;
+}
+
+nav a.active {
+  border-bottom: 2px solid #ffda79;
+}
+
+/* Footer */
+footer {
+  margin-top: 80px;
+  padding: 20px 0;
+  border-top: 1px solid gold;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #f7f1e3;
+}

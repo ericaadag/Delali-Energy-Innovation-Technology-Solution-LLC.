@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Delali Energy Innovations</title>
+  <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+  <main>
+    <div class="logo-container">
+      <img src="logo.png" alt="Delali Energy Innovations Logo" />
+    </div>
+    <header>
+      <nav>
+        <a href="DEITS.html">Home</a>
+        <a href="about.html" class = "active">About Us</a>
+        <a href="careers.html">Careers</a>
+        <a href="divisions.html" >Divisions</a>
+          <a href="why_us.html">Why Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="about-section">
+      
+      <h1>About Us</h1>
+      <p><strong>Who We Are</strong><br>
+        Delali Energy Innovations Technology Solutions LLC is a global innovation company committed to redefining industries through energy, technology, and intelligent solutions.
+      </p>
+      <p>
+        Founded with the vision of <em>Light Beyond Limits</em>, we deliver next-generation platforms that combine:
+        <br>✔ Energy systems
+        <br>✔ AI-driven technologies
+        <br>✔ Financial infrastructure
+        <br>✔ Advanced control and command center solutions
+      </p>
+      <p>
+        Our mission is simple yet powerful: We create the technologies that power tomorrow’s world.
+      </p>
+      <p>
+        From global oil & gas companies to banking institutions, we are the partner of choice for visionary blueprint design and system architecture.
+      </p>
+      <p>
+        Founded and led by <strong>Saviour Agbana</strong>, we are committed to empowering nations and industries across The United States, The Middle East, Europe, Asia, Africa, and beyond.
+      </p>
+    </section>
+
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <button class="faq-question">What services does Delali Energy offer?</button>
+        <div class="faq-answer">
+          <p>We offer integrated solutions across energy systems, AI applications, financial tech platforms, and advanced control infrastructures.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Where is your company located?</button>
+        <div class="faq-answer">
+          <p>We operate globally, with presence in the United States, Africa, the Middle East, Europe, and Asia.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How can I collaborate with your team?</button>
+        <div class="faq-answer">
+          <p>Visit our Contact page and reach out via form or email. We're always open to partnerships, talent, and innovation ideas.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Who leads the company?</button>
+        <div class="faq-answer">
+          <p>Delali Energy Innovations is founded and led by Saviour Agbana, a visionary in energy-tech integration and infrastructure development.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+      item.querySelector('.faq-question').addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
