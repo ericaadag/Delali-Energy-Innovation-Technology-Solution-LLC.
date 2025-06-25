@@ -194,4 +194,14 @@
     color: gold;
     user-select: none;
   }
-  
+  .slide {
+  display: none;
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.slide.active {
+  display: block;
+}
