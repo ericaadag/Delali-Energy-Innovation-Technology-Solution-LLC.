@@ -22,3 +22,17 @@ function nextSlide() {
 }
 
 setInterval(nextSlide, 4000);
+let slideIndex = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlides() {
+  slides.forEach((slide, i) => {
+    slide.style.display = i === slideIndex ? "block" : "none";
+  });
+
+  slideIndex = (slideIndex + 1) % slides.length;
+  setTimeout(showSlides, 3000); // Change slide every 3 seconds
+}
+
+document.addEventListener("DOMContentLoaded", showSlides);
+
